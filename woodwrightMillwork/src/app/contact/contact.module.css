@@ -1,0 +1,16 @@
+.main {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #e8e4e4;
+}
+
+.text {
+  font-size: 1.2rem;
+  color: #666;
+}
