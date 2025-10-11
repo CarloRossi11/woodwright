@@ -1,0 +1,50 @@
+.main {
+    width: 100%;
+    padding: 2rem;
+}
+
+.links { 
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.linkGroup {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.logoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  color: #fff;
+  transition: background 0.25s, color 0.25s, border-color 0.25s;
+}
+
+.button:hover {
+  color: #3b6a78;
+}
+
+@media (prefers-color-scheme: dark) {
+  .logo {
+    filter: invert();
+  }
+}
+
+@media (max-width: 600px) {
+  .main {
+    width: 100vw;
+    padding: 0 8px;
+    box-sizing: border-box;
+  }
+  .linkGroup {
+    flex-direction: column;
+    width: 100vw;
+    gap: 8px;
+  }
+}
