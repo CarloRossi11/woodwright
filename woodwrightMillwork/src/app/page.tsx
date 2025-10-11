@@ -32,24 +32,17 @@ export default function Home() {
           <div className={styles.introLeft}>
             <h1>Woodwright Millwork LLC</h1>
             <h2>
-              We build, optimize, and modernize your business operations with
-              smart, scalable digital solutions.
+              License #87258
             </h2>
             <p>
-              At Tech Wrench, we believe in the power of craftsmanship — whether
-              it is built by hand or coded in the cloud. We help small and
-              mid-sized businesses modernize their operations, harness digital
-              tools, and streamline workflows through practical, scalable
-              technology. Inspired by the Pittsburgh legacy of grit and
-              innovation, we are dedicated to building stronger, smarter
-              businesses equipped for the modern digital economy.
+              The Woodwright & Millwork LLC mission is to pursue and bring to completion professional projects that are both functional and beautifully crafted. 
             </p>
           </div>
           <div className={styles.introRight}>
             <h4>Phone</h4>
-            <p>412-867-5309</p>
+            <p>412-491-7136</p>
             <h4>Location</h4>
-            <p>Pittsburgh, PA</p>
+            <p>65 Glen Rd. PMB 252 Garner, NC 27529</p>
             <div className={styles.ctas}>
               <a className={styles.primary} href={"/contact"}>
                 Contact
@@ -129,13 +122,13 @@ export default function Home() {
         >
           <Image
             className={styles.logo}
-            src="/next.svg"
-            alt="Next.js logo"
-            width={180}
-            height={38}
+            src="/woddwrightLogo.webp"
+            alt="Woodwright logo"
+            width={75}
+            height={75}
             priority
           />
-          <p>- Establish | Grow | Expand -</p>
+          <p>Custom Carpentry | Built Ins | Kitchen & Bathrooms</p>
         </HeroOverlay>
         <div className={styles.contact}>
           <h1> Get In Touch</h1>
