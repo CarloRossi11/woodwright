@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Tech Wrench",
-  description: "Web Solutions for Your Business",
+  title: "Woodwright & Millwork LLC",
+  description: "Woodwright and Millwork, LLC specializes in home remodeling, from kitchens, bathrooms to outdoor living.",
 };
 
 export default function RootLayout({
