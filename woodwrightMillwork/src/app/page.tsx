@@ -19,10 +19,10 @@ export default function Home() {
       {isMobile ? <HamburgerMenu /> : <Header />}
       <Carousel
         images={[
-          "/RC_HomeSlider_Web.webp",
-          "/RC_HomeSlider_Web_2.webp",
-          "/RC_HomeSlider_Web_3.webp",
-          "/RC_HomeSlider_Web_4.webp",
+          "/ripped/kitchen.webp",
+          "/ripped/playroom2.webp",
+          "/ripped/tv.webp",
+          "/ripped/greenroom.webp",
         ]}
         autoPlay
         autoPlayInterval={4000}
@@ -52,7 +52,7 @@ export default function Home() {
         </div>
 
         <HeroOverlay 
-        backgroundSrc="/RC_HomeSlider_Web_2.webp" 
+        backgroundSrc="/ripped/puppy.webp" 
         height="500px"
         aspectRatio="16/9"
         overlayDarkness={0.5}
@@ -72,18 +72,20 @@ export default function Home() {
             <ImageShuffle
               images={[
                 {
-                  src: "/RC_HomeSlider_Web_4.webp",
-                  alt: "Carpentry Project 4",
+                  src: "/ripped/stairs.webp",
+                  alt: "Stairs",
                 },
                 {
-                  src: "/RC_HomeSlider_Web_3.webp",
-                  alt: "Carpentry Project 3",
+                  src: "/drive/float.jpg",
+                  alt: "Floating Shelves",
                 },
                 {
-                  src: "/RC_HomeSlider_Web_2.webp",
-                  alt: "Carpentry Project 2",
+                  src: "/drive/ceiling.jpg",
+                  alt: "Bathroom Cubby",
                 },
-                { src: "/RC_HomeSlider_Web.webp", alt: "Carpentry Project 1" },
+                { src: "/drive/sink.jpg", 
+                  alt: "Sink" 
+                },
               ]}
             />
           </div>
@@ -112,7 +114,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <HeroOverlay backgroundSrc="/RC_HomeSlider_Web_3.webp" 
+        <HeroOverlay backgroundSrc="/ripped/playroom.webp" 
         height="500px"
         aspectRatio="16/9"
         overlayDarkness={0.5}
