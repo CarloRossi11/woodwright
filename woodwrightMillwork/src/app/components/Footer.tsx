@@ -15,6 +15,7 @@ export default function Footer() {
               rel="noopener noreferrer"
             >
               <Image
+                className={styles.icon}
                 aria-hidden
                 src="/FB.png"
                 alt="Facebook icon"
@@ -28,6 +29,7 @@ export default function Footer() {
               rel="noopener noreferrer"
             >
               <Image
+              className={styles.icon}
                 aria-hidden
                 src="/IG.png"
                 alt="Instagram icon"
@@ -41,6 +43,7 @@ export default function Footer() {
               rel="noopener noreferrer"
             >
               <Image
+              className={styles.icon}
                 aria-hidden
                 src="/LI.png"
                 alt="LinkedIn icon"
@@ -63,7 +66,7 @@ export default function Footer() {
           </Link>
         </div>
         <div className={styles.copyright}>
-          <p>© 2024 Tech Wrench. All rights reserved.</p>
+          <p>©2019 Woodwright & Millwork LLC. All rights reserved.</p>
           <p>
             Development & Website by{" "}
             <a href="https://techwrench.co/" target="_blank">
