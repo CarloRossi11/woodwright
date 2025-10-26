@@ -15,11 +15,15 @@ export default function Page() {
       {isMobile ? <HamburgerMenu /> : <Header />}
       <HeroOverlay backgroundSrc="/ripped/tv.webp" height="500px"
         overlayDarkness={.5}
-        gradientOverlay
+        // gradientOverlay
         fadeIn
       >
       <h1>CONTACT</h1>
-      <p>Lets connect— whether you are ready to start a project or just exploring ideas, we would love to hear from you.</p>
+
+<p>Our goal is to gather the most information from you to assist us with helping you bring your project to fruition.  </p>
+<br/>
+<p>Please complete the form below and we will get back to you within 1-2 business days to discuss the next steps for your project. </p>
+
     </HeroOverlay>
       <div className={styles.main}>
       <ContactForm />
