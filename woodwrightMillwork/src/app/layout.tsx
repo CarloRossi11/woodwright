@@ -1,20 +1,23 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Cinzel, Playfair_Display } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const cinzel = Cinzel({
+  variable: "--font-cinzel",
   subsets: ["latin"],
+  weight: ["700"], // Bold for headers
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const playfair = Playfair_Display({
+  variable: "--font-playfair",
   subsets: ["latin"],
+  weight: ["400", "500", "700"], // Normal + medium + bold for flexibility
 });
 
 export const metadata: Metadata = {
   title: "Woodwright & Millwork LLC",
-  description: "Woodwright and Millwork, LLC specializes in home remodeling, from kitchens, bathrooms to outdoor living.",
+  description:
+    "Woodwright and Millwork, LLC specializes in home remodeling, from kitchens, bathrooms to outdoor living.",
 };
 
 export default function RootLayout({
@@ -24,7 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body className={`${cinzel.variable} ${playfair.variable}`}>
         {children}
       </body>
     </html>

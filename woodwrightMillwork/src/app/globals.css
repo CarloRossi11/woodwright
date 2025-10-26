@@ -1,6 +1,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --font-cinzel: 'Cinzel', serif;
+  --font-playfair: 'Playfair Display', serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -8,6 +10,21 @@
     --background: #0a0a0a;
     --foreground: #ededed;
   }
+}
+
+/* Apply Cinzel Bold to all headers */
+h1, h2, h3, h4, h5 {
+  font-family: var(--font-cinzel);
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+/* Apply Playfair Display to all other text */
+body, p, span, li, a, input, textarea, button {
+  font-family: var(--font-playfair);
+  font-weight: 400;
+  line-height: 1.6;
+  /* color: #222; */
 }
 
 html,
@@ -19,7 +36,6 @@ body {
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
