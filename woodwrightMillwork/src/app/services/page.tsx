@@ -13,7 +13,7 @@ export default function Page() {
   return (
     <div className={styles.wrapper}>
       {isMobile ? <HamburgerMenu /> : <Header />}
-      <HeroOverlay backgroundSrc="/RC_HomeSlider_Web_2.webp" height="500px"
+      <HeroOverlay backgroundSrc="/ripped/playroom.webp" height="500px"
         overlayDarkness={.5}
         gradientOverlay
         fadeIn

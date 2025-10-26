@@ -13,32 +13,36 @@ export default function Page() {
   return (
     <div className={styles.wrapper}>
       {isMobile ? <HamburgerMenu /> : <Header />}
-      <HeroOverlay backgroundSrc="/RC_HomeSlider_Web_2.webp" height="500px"
-        overlayDarkness={.5}
+      <HeroOverlay
+        backgroundSrc="/ripped/kitchen.webp"
+        height="500px"
+        overlayDarkness={0.5}
         gradientOverlay
         fadeIn
       >
-      <h1>PORTFOLIO</h1>
-      <p>
-        Explore our collection of projects that showcase our passion for web development, problem-solving, and delivering quality solutions for small businesses.
-      </p>
-    </HeroOverlay>
+        <h1>PORTFOLIO</h1>
+        <p>
+          Explore our collection of projects that showcase our passion for web
+          development, problem-solving, and delivering quality solutions for
+          small businesses.
+        </p>
+      </HeroOverlay>
       <div className={styles.main}>
-      <ImageViewer
-        images={[
-          { src: "/RC_HomeSlider_Web.webp", alt: "Home Slider 1" },
-          { src: "/RC_HomeSlider_Web_2.webp", alt: "Home Slider 2" },
-          { src: "/RC_HomeSlider_Web_3.webp", alt: "Home Slider 3" },
-          { src: "/RC_HomeSlider_Web_4.webp", alt: "Home Slider 4" },
-        ]}
-      />
-      <div className={styles.buttonContainer}>
-        <div className={styles.ctas}>
-          <a className={styles.primary} href={"/contact"}>
-            Contact
-          </a>
+        <ImageViewer
+          images={[
+            { src: "/RC_HomeSlider_Web.webp", alt: "Home Slider 1" },
+            { src: "/RC_HomeSlider_Web_2.webp", alt: "Home Slider 2" },
+            { src: "/RC_HomeSlider_Web_3.webp", alt: "Home Slider 3" },
+            { src: "/RC_HomeSlider_Web_4.webp", alt: "Home Slider 4" },
+          ]}
+        />
+        <div className={styles.buttonContainer}>
+          <div className={styles.ctas}>
+            <a className={styles.primary} href={"/contact"}>
+              Contact
+            </a>
+          </div>
         </div>
-      </div>
       </div>
       <Footer />
     </div>
