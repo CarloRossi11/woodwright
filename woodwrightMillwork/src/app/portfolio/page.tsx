@@ -30,10 +30,12 @@ export default function Page() {
       <div className={styles.main}>
         <ImageViewer
           images={[
-            { src: "/RC_HomeSlider_Web.webp", alt: "Home Slider 1" },
-            { src: "/RC_HomeSlider_Web_2.webp", alt: "Home Slider 2" },
-            { src: "/RC_HomeSlider_Web_3.webp", alt: "Home Slider 3" },
-            { src: "/RC_HomeSlider_Web_4.webp", alt: "Home Slider 4" },
+            { src: "/drive/bench.jpg", alt: "Shower Bench" },
+            { src: "/drive/cubby.jpg", alt: "Cubby" },
+            { src: "/drive/toilet.jpg", alt: "Toilet" },
+            { src: "/drive/deck.jpg", alt: "Deck" },
+            { src: "/drive/mount.jpg", alt: "Fireplace" },
+            { src: "/drive/shadow.jpg", alt: "Kitchen" },
           ]}
         />
         <div className={styles.buttonContainer}>

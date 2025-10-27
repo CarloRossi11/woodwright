@@ -27,16 +27,6 @@
   }
 }
 
-/*
-Color Palette
-#888C89
-#cfc7bb
-#E2C49C
-#0A6ED3
-#274c77
-
-*/
-
 .main {
   display: flex;
   flex-direction: column;

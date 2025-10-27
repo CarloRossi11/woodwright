@@ -5,6 +5,16 @@
   --font-playfair: 'Playfair Display', serif;
 }
 
+/*
+Color Palette
+#888C89
+#cfc7bb
+#E2C49C
+#2660A4
+#274c77
+https://coolors.co/assets/img/logo.svg
+*/
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
