@@ -108,7 +108,7 @@ export default function Home() {
               <li>Online Ads</li>
             </ul>
             <div className={styles.ctas}>
-              <a className={styles.primary} href={"/services"}>
+              <a className={styles.primary} href={"/about"}>
                 Services
               </a>
             </div>

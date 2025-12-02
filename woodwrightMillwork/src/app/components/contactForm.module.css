@@ -1,5 +1,5 @@
 .contactForm {
-  background-color: #001d23;
+  background-color: #274c77;
   padding: 1rem;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -25,29 +25,31 @@
   flex: 1;
   padding: 0.6rem;
   margin-top: 0.25rem;
-  background-color: #cfc7bb;
+  background-color: #ffff;
   font-size: clamp(0.9rem, 1vw, 1rem);
-  border: 1px solid #3b6a78;
+  border: 1px solid #ffff;
   border-radius: 4px;
   width: 100%;
   box-sizing: border-box;
+  color: #274c77;
 }
 
 /* Buttons */
 .formGroup button,
 .contactForm button {
   padding: 0.7rem 1.5rem;
-  background-color: #3b6a78;
-  color: white;
-  border: none;
+  background-color: #cfc7bb;
+  color: #274c77;
+  border: 1px solid #274c77;
   border-radius: 4px;
   cursor: pointer;
   transition: background 0.25s, color 0.25s, border-color 0.25s;
 }
 
 .contactForm button:hover {
-  background-color: #cfc7bb;
-  color: #3b6a78;
+  background-color: #274c77;
+  color: #cfc7bb;
+  border: 1px solid #cfc7bb;
 }
 
 .formButton {

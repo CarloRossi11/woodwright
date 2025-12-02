@@ -13,9 +13,9 @@ export default function Header() {
           <Link className={styles.button} href={"/about"}>
             <h3>About</h3>
           </Link>
-          <Link className={styles.button} href={"/services"}>
+          {/* <Link className={styles.button} href={"/services"}>
             <h3>Services</h3>
-          </Link>
+          </Link> */}
         </div>
         <div className={styles.logoContainer}>
           <Link href={"/"}>
