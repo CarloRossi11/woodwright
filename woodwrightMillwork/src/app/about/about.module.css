@@ -1,5 +1,5 @@
 .main {
-  padding: 2rem;
+  /* padding: 2rem; */
 }
 
 .heading {
@@ -38,8 +38,9 @@
 }
 
 a.primary {
-  background: var(--foreground);
-  color: var(--background);
+  background-color: #cfc7bb;
+  color: #274c77;
+  border: var(--foreground);
   gap: 8px;
 }
 
@@ -49,13 +50,14 @@ a.secondary {
 }
 
 .company {
-  margin: 1rem;
+  padding: 2rem;
+  background-color: #274c77;
 }
 
 .founder {
+  padding: 2rem;
   width: 100%;
   display: flex;
-  margin: 1rem;
   align-items: center;
 }
 
@@ -84,14 +86,14 @@ align-items: center;
     align-items: center;
   }
   .company {
-  margin: 1rem;
+
   text-align: center;
 }
 
 .founder {
   display: flex;
   flex-direction: column;
-  margin: 1rem;
+  /* margin: 1rem; */
   align-items: center;
   justify-content: space-around;
 }
@@ -111,9 +113,9 @@ padding-top: 1rem;
 
 @media (hover: hover) and (pointer: fine) {
   a.primary:hover {
-    background: var(--button-primary-hover);
-    border-color: transparent;
-    --button-primary-hover: #3b6a78;
+    background-color: #274c77;
+  color: #cfc7bb;
+  border: 1px solid #cfc7bb;
   }
 
   a.secondary:hover {

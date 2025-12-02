@@ -11,8 +11,16 @@
 }
 
 .icon {
-  filter: brightness(0) saturate(100%) invert(85%) sepia(3%) saturate(959%) hue-rotate(351deg) brightness(94%) contrast(95%)
+  filter: brightness(0) saturate(100%) invert(85%) sepia(3%) saturate(959%) hue-rotate(351deg) brightness(94%) contrast(95%);
+  transition:
+    background 0.2s,
+    color 0.2s,
+    border-color 0.2s;
 }
+
+.icon:hover {
+  filter: brightness(0) saturate(100%) invert(28%) sepia(17%) saturate(1808%) hue-rotate(172deg) brightness(91%) contrast(92%);
+  }
 
 .footer a {
   display: flex;

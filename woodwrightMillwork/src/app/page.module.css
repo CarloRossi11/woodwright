@@ -39,7 +39,8 @@
   align-items: center;
   justify-content: space-around;
   padding: 2rem;
-  background-color: #274c77
+  background-color: #274c77;
+  width: 100%;
 }
 
 .introLeft {
@@ -116,7 +117,7 @@
 a.primary {
   background-color: #cfc7bb;
   color: #274c77;
-  border: 1px solid #274c77;
+  border: var(--foreground);
   gap: 8px;
   margin: 1rem;
 }

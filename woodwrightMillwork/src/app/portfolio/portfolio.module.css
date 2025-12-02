@@ -38,8 +38,9 @@
 }
 
 a.primary {
-  background: var(--foreground);
-  color: var(--background);
+  background-color: #cfc7bb;
+  color: #274c77;
+  border: var(--foreground);
   gap: 8px;
 }
 
@@ -56,9 +57,9 @@ a.secondary {
 
 @media (hover: hover) and (pointer: fine) {
   a.primary:hover {
-    background: var(--button-primary-hover);
-    border-color: transparent;
-    --button-primary-hover: #3b6a78;
+    background-color: #274c77;
+  color: #cfc7bb;
+  border: 1px solid #cfc7bb;
   }
 
   a.secondary:hover {

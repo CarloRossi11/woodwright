@@ -27,15 +27,15 @@ export default function Home() {
         autoPlay
         autoPlayInterval={4000}
       />
-      <main className={styles.main}>
+      
         <div className={styles.intro}>
           <div className={styles.introLeft}>
             <h1>Woodwright Millwork LLC</h1>
-            <h2>
-              License #87258
-            </h2>
+            <h2>License #87258</h2>
             <p>
-              The Woodwright & Millwork LLC mission is to pursue and bring to completion professional projects that are both functional and beautifully crafted. 
+              The Woodwright & Millwork LLC mission is to pursue and bring to
+              completion professional projects that are both functional and
+              beautifully crafted.
             </p>
           </div>
           <div className={styles.introRight}>
@@ -50,15 +50,15 @@ export default function Home() {
             </div>
           </div>
         </div>
-
-        <HeroOverlay 
-        backgroundSrc="/ripped/puppy.webp" 
-        height="500px"
-        aspectRatio="16/9"
-        overlayDarkness={0.5}
-        gradientOverlay
-        // parallax
-        fadeIn
+<main className={styles.main}>
+        <HeroOverlay
+          backgroundSrc="/ripped/puppy.webp"
+          height="500px"
+          aspectRatio="16/9"
+          overlayDarkness={0.5}
+          gradientOverlay
+          // parallax
+          fadeIn
         >
           <h2>SUPERIOR CRAFTSMANSHIP</h2>
           <p>
@@ -83,29 +83,25 @@ export default function Home() {
                   src: "/drive/ceiling.jpg",
                   alt: "Bathroom Cubby",
                 },
-                { src: "/drive/sink.jpg", 
-                  alt: "Sink" 
-                },
+                { src: "/drive/sink.jpg", alt: "Sink" },
               ]}
             />
           </div>
           <div className={styles.weDoRight}>
             <h2>What we do</h2>
             <p>
-              At Tech Wrench, we believe in the power of craftsmanship — whether
-              it is built by hand or coded in the cloud. We help small and
-              mid-sized businesses modernize their operations, harness digital
-              tools, and streamline workflows through practical, scalable
-              technology. Inspired by the Pittsburgh legacy of grit and
-              innovation, we are dedicated to building stronger, smarter
-              businesses equipped for the modern digital economy.
+              Woodwright & Millwork offers custom kitchens, bathrooms,
+              built-ins, cabinetry, and closets designed to fit your home and
+              style. We handle home remodeling, detailed carpentry, and
+              specialty woodwork, delivering clean, quality craftsmanship on
+              every project.
             </p>
             <ul>
-              <li>Websites</li>
-              <li>SEO</li>
-              <li>Branding</li>
-              <li>Email & SMS Marketing</li>
-              <li>Online Ads</li>
+              <li>Custom kitchens and bathrooms</li>
+              <li>Built-ins and custom cabinetry</li>
+              <li>Closet systems and storage solutions</li>
+              <li>Home remodeling and detailed carpentry</li>
+              <li>Specialty woodwork and custom millwork</li>
             </ul>
             <div className={styles.ctas}>
               <a className={styles.primary} href={"/about"}>
@@ -114,13 +110,14 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <HeroOverlay backgroundSrc="/ripped/playroom.webp" 
-        height="500px"
-        aspectRatio="16/9"
-        overlayDarkness={0.5}
-        gradientOverlay
-        // parallax
-        fadeIn
+        <HeroOverlay
+          backgroundSrc="/ripped/playroom.webp"
+          height="500px"
+          aspectRatio="16/9"
+          overlayDarkness={0.5}
+          gradientOverlay
+          // parallax
+          fadeIn
         >
           <Image
             className={styles.logo}
@@ -136,7 +133,6 @@ export default function Home() {
           <h1> Get In Touch</h1>
           <ContactForm />
         </div>
-        
       </main>
       <Footer />
     </div>

@@ -22,48 +22,46 @@ export default function Page() {
       >
         <h1>ABOUT</h1>
         <p>
-          Built on a foundation of hard work and over five years of development
-          experience, Tech Wrench is dedicated to delivering high-quality,
-          tailored solutions that help small businesses thrive.
+          The Woodwright & Millwork LLC mission is to pursue and bring to completion professional projects that are both functional and beautifully crafted.
         </p>
       </HeroOverlay>
       <div className={styles.main}>
-        <div className={styles.company}>
-          <h1>About The Company</h1>
-          <p>
-            At Tech Wrench, we believe technology should empower—not
-            overwhelm—small businesses. Our mission is to simplify the digital
-            landscape, giving business owners the right tools, strategies, and
-            support to grow with confidence. From web development and automation
-            to AI-driven solutions, we help transform ideas into scalable
-            results.
-          </p>
-        </div>
         <div className={styles.founder}>
           <div className={styles.founderText}>
-            <h1>About The Founder</h1>
+            <h1>Services</h1>
             <p>
-              Tech Wrench was founded by Carlo Berardelli, a passionate web
-              developer with over 5 years of hands-on experience building
-              websites, apps, and digital solutions. Driven by a love for
-              problem-solving and innovation, Carlo started Tech Wrench to
-              bridge the gap between modern technology and small businesses that
-              need it most. His goal is to make tech accessible, practical, and
-              tailored—so entrepreneurs can focus on what they do best while
-              Tech Wrench handles the rest.
+              Woodwright & Millwork provides custom kitchens and bathrooms,
+              built-ins, cabinetry, and tailored closet systems designed to
+              elevate your home’s function and style. We offer full-service
+              remodeling and detailed carpentry work, from trim and storage
+              solutions to complete room transformations. Our specialty woodwork
+              and custom millwork add unique character and craftsmanship to any
+              space, giving each project a refined, handcrafted finish.
             </p>
           </div>
           <div className={styles.founderImage}>
-            <Image
-              className={styles.logo}
-              src="/fabio.webp"
-              alt="Founder Image"
-              width={200}
-              height={300}
-              priority
-            />
-            <p className={styles.caption}>Carlo Berardelli, Founder</p>
+            <ul>
+              <li>Custom kitchens and bathrooms</li>
+              <li>Built-ins and custom cabinetry</li>
+              <li>Closet systems and storage solutions</li>
+              <li>Home remodeling and detailed carpentry</li>
+              <li>Specialty woodwork and custom millwork</li>
+            </ul>
           </div>
+        </div>
+        <div className={styles.company}>
+          <h1>About The Company</h1>
+          <p>
+            We believe every home renovation deserves
+            craftsmanship, care, and personalized design. From kitchens and
+            bathrooms to closets, built-ins and custom carpentry, we specialize
+            in transforming your vision into beautifully functional spaces. With
+            meticulous attention to detail, transparent pricing, and a
+            commitment to doing the job right, we aim to deliver quality and
+            trust on every project. Our goal is simple: to make your home more
+            comfortable, more beautiful, and uniquely yours — one crafted wood
+            detail at a time.
+          </p>
         </div>
       </div>
       <div className={styles.buttonContainer}>
