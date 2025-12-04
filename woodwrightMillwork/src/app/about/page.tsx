@@ -43,7 +43,6 @@ export default function Page() {
             <ul>
               <li>Custom kitchens and bathrooms</li>
               <li>Built-ins and custom cabinetry</li>
-              <li>Closet systems and storage solutions</li>
               <li>Home remodeling and detailed carpentry</li>
               <li>Specialty woodwork and custom millwork</li>
             </ul>

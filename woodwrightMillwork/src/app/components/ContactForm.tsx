@@ -56,14 +56,14 @@ export default function ContactForm() {
       </div>
 
       {/* Company + Website */}
-      <div className={styles.formGroup}>
+      {/* <div className={styles.formGroup}>
         <label>Company</label>
         <input type="text" name="company" onChange={handleChange} />
       </div>
       <div className={styles.formGroup}>
         <label>Website URL</label>
         <input type="url" name="website" onChange={handleChange} />
-      </div>
+      </div> */}
 
       {/* Project Details (full width) */}
       <div className={styles.formGroup}>

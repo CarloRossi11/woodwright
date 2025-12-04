@@ -20,7 +20,7 @@ export default function Home() {
       <Carousel
         images={[
           "/ripped/kitchen.webp",
-          "/ripped/playroom2.webp",
+          "/ripped/playroom.webp",
           "/ripped/tv.webp",
           "/ripped/greenroom.webp",
         ]}
@@ -51,7 +51,7 @@ export default function Home() {
           </div>
         </div>
 <main className={styles.main}>
-        <HeroOverlay
+        {/* <HeroOverlay
           backgroundSrc="/ripped/puppy.webp"
           height="500px"
           aspectRatio="16/9"
@@ -65,7 +65,7 @@ export default function Home() {
             We provide our clients with years of experience working with
             hardwoods, exotic wood veneers, and more.
           </p>
-        </HeroOverlay>
+        </HeroOverlay> */}
 
         <div className={styles.weDo}>
           <div className={styles.weDoLeft}>
@@ -82,8 +82,7 @@ export default function Home() {
                 {
                   src: "/drive/ceiling.jpg",
                   alt: "Bathroom Cubby",
-                },
-                { src: "/drive/sink.jpg", alt: "Sink" },
+                }
               ]}
             />
           </div>
@@ -99,7 +98,6 @@ export default function Home() {
             <ul>
               <li>Custom kitchens and bathrooms</li>
               <li>Built-ins and custom cabinetry</li>
-              <li>Closet systems and storage solutions</li>
               <li>Home remodeling and detailed carpentry</li>
               <li>Specialty woodwork and custom millwork</li>
             </ul>
@@ -111,10 +109,10 @@ export default function Home() {
           </div>
         </div>
         <HeroOverlay
-          backgroundSrc="/ripped/playroom.webp"
+          backgroundSrc="/ripped/puppy.webp"
           height="500px"
           aspectRatio="16/9"
-          overlayDarkness={0.5}
+          overlayDarkness={0.75}
           gradientOverlay
           // parallax
           fadeIn
