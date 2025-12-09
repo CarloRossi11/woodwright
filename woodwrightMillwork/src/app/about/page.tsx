@@ -22,7 +22,9 @@ export default function Page() {
       >
         <h1>ABOUT</h1>
         <p>
-          The Woodwright & Millwork LLC mission is to pursue and bring to completion professional projects that are both functional and beautifully crafted.
+          The Woodwright & Millwork LLC mission is to pursue and bring to
+          completion professional projects that are both functional and
+          beautifully crafted.
         </p>
       </HeroOverlay>
       <div className={styles.main}>
@@ -51,15 +53,14 @@ export default function Page() {
         <div className={styles.company}>
           <h1>About The Company</h1>
           <p>
-            We believe every home renovation deserves
-            craftsmanship, care, and personalized design. From kitchens and
-            bathrooms to closets, built-ins and custom carpentry, we specialize
-            in transforming your vision into beautifully functional spaces. With
-            meticulous attention to detail, transparent pricing, and a
-            commitment to doing the job right, we aim to deliver quality and
-            trust on every project. Our goal is simple: to make your home more
-            comfortable, more beautiful, and uniquely yours — one crafted wood
-            detail at a time.
+            We believe every home renovation deserves craftsmanship, care, and
+            personalized design. From kitchens and bathrooms to closets,
+            built-ins and custom carpentry, we specialize in transforming your
+            vision into beautifully functional spaces. With meticulous attention
+            to detail, transparent pricing, and a commitment to doing the job
+            right, we aim to deliver quality and trust on every project. Our
+            goal is simple: to make your home more comfortable, more beautiful,
+            and uniquely yours — one crafted wood detail at a time.
           </p>
         </div>
       </div>

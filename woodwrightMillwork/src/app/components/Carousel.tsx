@@ -69,10 +69,16 @@ const Carousel: React.FC<CarouselProps> = ({
           />
         ))}
       </div>
-      <button className={`${styles.control} ${styles.prev}`} onClick={prevSlide}>
+      <button
+        className={`${styles.control} ${styles.prev}`}
+        onClick={prevSlide}
+      >
         ‹
       </button>
-      <button className={`${styles.control} ${styles.next}`} onClick={nextSlide}>
+      <button
+        className={`${styles.control} ${styles.next}`}
+        onClick={nextSlide}
+      >
         ›
       </button>
       <div className={styles.dots}>

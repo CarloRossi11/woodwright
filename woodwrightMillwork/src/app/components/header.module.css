@@ -1,11 +1,11 @@
 .main {
-    width: 100%;
-    padding: .75rem;
+  width: 100%;
+  padding: .75rem;
 }
 
-.links { 
-    display: flex;
-    justify-content: space-evenly;
+.links {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .linkGroup {
@@ -42,6 +42,7 @@
     padding: 0 8px;
     box-sizing: border-box;
   }
+
   .linkGroup {
     flex-direction: column;
     width: 100vw;

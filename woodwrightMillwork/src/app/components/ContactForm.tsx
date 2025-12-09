@@ -1,30 +1,38 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import styles from './contactForm.module.css';
+import { useState } from "react";
+import styles from "./contactForm.module.css";
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
-    company: '',
-    email: '',
-    phone: '',
-    website: '',
-    projectDetails: '',
-    howHeard: '',
+    firstName: "",
+    lastName: "",
+    company: "",
+    email: "",
+    phone: "",
+    website: "",
+    projectDetails: "",
+    howHeard: "",
     file: null as File | null,
   });
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >
   ) => {
-    const target = e.target as HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement;
+    const target = e.target as
+      | HTMLInputElement
+      | HTMLTextAreaElement
+      | HTMLSelectElement;
     const { name, value } = target;
 
-    setFormData(prev => ({
+    setFormData((prev) => ({
       ...prev,
-      [name]: target.type === 'file' && 'files' in target ? (target.files?.[0] ?? null) : value,
+      [name]:
+        target.type === "file" && "files" in target
+          ? target.files?.[0] ?? null
+          : value,
     }));
   };
 
@@ -55,20 +63,15 @@ export default function ContactForm() {
         <input type="tel" name="phone" onChange={handleChange} />
       </div>
 
-      {/* Company + Website */}
-      {/* <div className={styles.formGroup}>
-        <label>Company</label>
-        <input type="text" name="company" onChange={handleChange} />
-      </div>
-      <div className={styles.formGroup}>
-        <label>Website URL</label>
-        <input type="url" name="website" onChange={handleChange} />
-      </div> */}
-
       {/* Project Details (full width) */}
       <div className={styles.formGroup}>
         <label>Project Details</label>
-        <textarea name="projectDetails" rows={4} required onChange={handleChange} />
+        <textarea
+          name="projectDetails"
+          rows={4}
+          required
+          onChange={handleChange}
+        />
       </div>
 
       {/* How Heard (full width) */}

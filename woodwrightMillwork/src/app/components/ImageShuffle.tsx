@@ -9,7 +9,7 @@ interface ImageShuffleProps {
 }
 
 export default function ImageShuffle({ images }: ImageShuffleProps) {
-  const [order, setOrder] = useState(images.map((_, i) => i)); 
+  const [order, setOrder] = useState(images.map((_, i) => i));
   // order = indices of images in current stack order
 
   const bringToBack = (index: number) => {
@@ -30,13 +30,20 @@ export default function ImageShuffle({ images }: ImageShuffleProps) {
             className={`${styles.imageWrapper} ${isTop ? styles.top : ""}`}
             style={{
               zIndex: images.length - i,
-              top: `${i * 12}px`,   // stagger vertically
-              left: `${i * 12}px`,  // stagger horizontally
-              transform: `scale(${1 - i * 0.03}) rotate(${i % 2 === 0 ? -2 : 2}deg)`,
+              top: `${i * 12}px`, // stagger vertically
+              left: `${i * 12}px`, // stagger horizontally
+              transform: `scale(${1 - i * 0.03}) rotate(${
+                i % 2 === 0 ? -2 : 2
+              }deg)`,
             }}
             onClick={() => bringToBack(order[i])}
           >
-            <Image src={img.src} alt={img.alt} fill style={{ objectFit: "cover" }} />
+            <Image
+              src={img.src}
+              alt={img.alt}
+              fill
+              style={{ objectFit: "cover" }}
+            />
           </div>
         );
       })}

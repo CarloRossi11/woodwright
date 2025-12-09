@@ -27,50 +27,38 @@ export default function Home() {
         autoPlay
         autoPlayInterval={4000}
       />
-      
-        <div className={styles.intro}>
-          <div className={styles.introLeft}>
-            <h1>Woodwright Millwork LLC</h1>
-            <h2>License #87258</h2>
-            <p>
-              The Woodwright & Millwork LLC mission is to pursue and bring to
-              completion professional projects that are both functional and
-              beautifully crafted.
-            </p>
-          </div>
-          <div className={styles.introRight}>
-            <h4>Phone</h4>
-            <p>412-491-7136</p>
-            <h4>Location</h4>
-            <p>65 Glen Rd. PMB 252 Garner, NC 27529</p>
-            <div className={styles.ctas}>
-              <a className={styles.primary} href={"/contact"}>
-                Contact
-              </a>
-            </div>
+
+      <div className={styles.intro}>
+        <div className={styles.introLeft}>
+          <h1>Woodwright Millwork LLC</h1>
+          <h2>License #87258</h2>
+          <p>
+            The Woodwright & Millwork LLC mission is to pursue and bring to
+            completion professional projects that are both functional and
+            beautifully crafted.
+          </p>
+        </div>
+        <div className={styles.introRight}>
+          <h4>Phone</h4>
+          <p>412-491-7136</p>
+          <h4>Location</h4>
+          <p>65 Glen Rd. PMB 252 Garner, NC 27529</p>
+          <div className={styles.ctas}>
+            <a className={styles.primary} href={"/contact"}>
+              Contact
+            </a>
           </div>
         </div>
-<main className={styles.main}>
-        {/* <HeroOverlay
-          backgroundSrc="/ripped/puppy.webp"
-          height="500px"
-          aspectRatio="16/9"
-          overlayDarkness={0.5}
-          gradientOverlay
-          // parallax
-          fadeIn
-        >
-          <h2>SUPERIOR CRAFTSMANSHIP</h2>
-          <p>
-            We provide our clients with years of experience working with
-            hardwoods, exotic wood veneers, and more.
-          </p>
-        </HeroOverlay> */}
-
+      </div>
+      <main className={styles.main}>
         <div className={styles.weDo}>
           <div className={styles.weDoLeft}>
             <ImageShuffle
               images={[
+                {
+                  src: "/drive/ceiling.jpg",
+                  alt: "Ceiling Woodwork",
+                },
                 {
                   src: "/ripped/stairs.webp",
                   alt: "Stairs",
@@ -78,10 +66,6 @@ export default function Home() {
                 {
                   src: "/drive/float.jpg",
                   alt: "Floating Shelves",
-                },
-                {
-                  src: "/drive/ceiling.jpg",
-                  alt: "Bathroom Cubby",
                 }
               ]}
             />

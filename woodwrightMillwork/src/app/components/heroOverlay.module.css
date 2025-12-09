@@ -44,20 +44,6 @@
   transform: translate(-50%, -50%);
 }
 
-/* Responsive height tweaks */
-/* @media (max-width: 768px) {
-  .wrapper {
-    height: 300px !important;
-  }
-}
-
-@media (min-width: 768px) {
-  .content {
-    max-width: 700px;
-    padding: 0 2rem;
-  }
-} */
-
 @media (max-width: 850px) {
   .heroOverlay {
     /* height: auto; */

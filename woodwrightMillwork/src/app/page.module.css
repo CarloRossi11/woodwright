@@ -30,7 +30,6 @@
 .main {
   display: flex;
   flex-direction: column;
-  /* gap: 32px; */
   grid-row-start: 2;
   width: 100%;
 }
@@ -135,9 +134,9 @@ a.secondary {
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   a.primary:hover {
-  background-color: #274c77;
-  color: #cfc7bb;
-  border: 1px solid #cfc7bb;
+    background-color: #274c77;
+    color: #cfc7bb;
+    border: 1px solid #cfc7bb;
   }
 
   a.secondary:hover {

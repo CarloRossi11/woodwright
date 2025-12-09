@@ -22,7 +22,8 @@ export default function Page() {
       >
         <h1>PORTFOLIO</h1>
         <p>
-          Explore our portfolio to see the custom woodwork and home transformations we’ve completed for our clients.
+          Explore our portfolio to see the custom woodwork and home
+          transformations we’ve completed for our clients.
         </p>
       </HeroOverlay>
       <div className={styles.main}>

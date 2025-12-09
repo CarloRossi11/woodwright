@@ -29,7 +29,7 @@ export default function Footer() {
               rel="noopener noreferrer"
             >
               <Image
-              className={styles.icon}
+                className={styles.icon}
                 aria-hidden
                 src="/IG.png"
                 alt="Instagram icon"
@@ -43,7 +43,7 @@ export default function Footer() {
               rel="noopener noreferrer"
             >
               <Image
-              className={styles.icon}
+                className={styles.icon}
                 aria-hidden
                 src="/LI.png"
                 alt="LinkedIn icon"

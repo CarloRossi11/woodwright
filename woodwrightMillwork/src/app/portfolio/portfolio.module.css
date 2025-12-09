@@ -58,8 +58,8 @@ a.secondary {
 @media (hover: hover) and (pointer: fine) {
   a.primary:hover {
     background-color: #274c77;
-  color: #cfc7bb;
-  border: 1px solid #cfc7bb;
+    color: #cfc7bb;
+    border: 1px solid #cfc7bb;
   }
 
   a.secondary:hover {
