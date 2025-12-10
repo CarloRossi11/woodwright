@@ -10,7 +10,7 @@ export default function Footer() {
           <h6>Follow Us:</h6>
           <div className={styles.socialLinks}>
             <a
-              href="https://www.facebook.com/"
+              href="https://www.facebook.com/profile.php?id=100068296598237"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -24,7 +24,7 @@ export default function Footer() {
               />
             </a>
             <a
-              href="https://www.instagram.com/"
+              href="https://www.instagram.com/woodwrightandmillwork/?hl=en"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -37,7 +37,7 @@ export default function Footer() {
                 height={16}
               />
             </a>
-            <a
+            {/* <a
               href="https://www.linkedin.com/"
               target="_blank"
               rel="noopener noreferrer"
@@ -50,7 +50,7 @@ export default function Footer() {
                 width={16}
                 height={16}
               />
-            </a>
+            </a> */}
           </div>
         </div>
         <div className={styles.logoContainer}>
@@ -69,7 +69,7 @@ export default function Footer() {
           <p>©2019 Woodwright & Millwork LLC. All rights reserved.</p>
           <p>
             Development & Website by{" "}
-            <a href="https://techwrench.co/" target="_blank">
+            <a href="https://techwrench.co/" target="_blank" className={styles.wrench}>
               Tech Wrench
             </a>
           </p>
