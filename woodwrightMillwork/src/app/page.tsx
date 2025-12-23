@@ -44,7 +44,7 @@ export default function Home() {
           <h4>Location</h4>
           <p>65 Glen Rd. PMB 252 Garner, NC 27529</p>
           <div className={styles.ctas}>
-            <a className={styles.primary} href={"/contact"}>
+            <a className={styles.primary} href={"/pages/contact"}>
               Contact
             </a>
           </div>
@@ -86,7 +86,7 @@ export default function Home() {
               <li>Specialty woodwork and custom millwork</li>
             </ul>
             <div className={styles.ctas}>
-              <a className={styles.primary} href={"/about"}>
+              <a className={styles.primary} href={"/pages/about"}>
                 Services
               </a>
             </div>

@@ -10,7 +10,7 @@ export default function Header() {
           <Link className={styles.button} href={"/"}>
             <h3>Home</h3>
           </Link>
-          <Link className={styles.button} href={"/about"}>
+          <Link className={styles.button} href={"/pages/about"}>
             <h3>About</h3>
           </Link>
         </div>
@@ -27,10 +27,10 @@ export default function Header() {
           </Link>
         </div>
         <div className={styles.linkGroup}>
-          <Link className={styles.button} href={"/portfolio"}>
+          <Link className={styles.button} href={"/pages/portfolio"}>
             <h3>Portfolio</h3>
           </Link>
-          <Link className={styles.button} href={"/contact"}>
+          <Link className={styles.button} href={"/pages/contact"}>
             <h3>Contact</h3>
           </Link>
         </div>
