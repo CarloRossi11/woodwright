@@ -1,11 +1,11 @@
 "use client";
 
 import styles from "./about.module.css";
-import Header from "../../components/Header";
-import Footer from "../../components/Footer";
-import HamburgerMenu from "../../components/HamburgerMenu";
-import useIsMobile from "../../hooks/useIsMobile";
-import HeroOverlay from "../../components/HeroOverlay";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import HamburgerMenu from "../components/HamburgerMenu";
+import useIsMobile from "../hooks/useIsMobile";
+import HeroOverlay from "../components/HeroOverlay";
 import Image from "next/image";
 
 export default function Page() {

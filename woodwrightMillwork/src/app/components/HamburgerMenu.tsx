@@ -41,14 +41,14 @@ const HamburgerMenu: React.FC = () => {
           <Link href="/">Home</Link>
         </li>
         <li>
-          <Link href="/pages/about">About</Link>
+          <Link href="/about">About</Link>
         </li>
         {/* <li><Link href="/services">Services</Link></li> */}
         <li>
-          <Link href="/pages/portfolio">Portfolio</Link>
+          <Link href="/portfolio">Portfolio</Link>
         </li>
         <li>
-          <Link href="/pages/contact">Contact</Link>
+          <Link href="/contact">Contact</Link>
         </li>
       </ul>
     </nav>

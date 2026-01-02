@@ -1,12 +1,12 @@
 "use client";
 
 import styles from "./contact.module.css";
-import Header from "../../components/Header";
-import Footer from "../../components/Footer";
-import HamburgerMenu from "../../components/HamburgerMenu";
-import useIsMobile from "../../hooks/useIsMobile";
-import ContactForm from "../../components/ContactForm";
-import HeroOverlay from "../../components/HeroOverlay";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import HamburgerMenu from "../components/HamburgerMenu";
+import useIsMobile from "../hooks/useIsMobile";
+import ContactForm from "../components/ContactForm";
+import HeroOverlay from "../components/HeroOverlay";
 
 export default function Page() {
   const isMobile = useIsMobile(850);

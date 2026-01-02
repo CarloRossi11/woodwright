@@ -28,6 +28,38 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${cinzel.variable} ${playfair.variable}`}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              name: "Woodwright Millwork LLC",
+              url: "https://woodwright.netlify.app",
+              telephone: "+1-412-491-7136",
+              address: {
+                "@type": "PostalAddress",
+                streetAddress: "65 Glen Rd. PMB 252",
+                addressLocality: "Garner",
+                addressRegion: "NC",
+                postalCode: "27529",
+                addressCountry: "US",
+              },
+              areaServed: {
+                "@type": "AdministrativeArea",
+                name: "North Carolina",
+              },
+              serviceType: [
+                "Custom Millwork",
+                "Custom Carpentry",
+                "Kitchen Remodeling",
+                "Bathroom Remodeling",
+                "Built-ins",
+              ],
+            }),
+          }}
+        />
+
         {children}
       </body>
     </html>
