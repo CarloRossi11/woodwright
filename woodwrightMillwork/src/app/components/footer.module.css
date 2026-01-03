@@ -24,13 +24,21 @@
 }
 
 .footer a {
-  display: flex;
   align-items: center;
   gap: 8px;
 }
 
 .footer img {
   flex-shrink: 0;
+}
+
+.address {
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
 }
 
 .socialLinks {
@@ -93,7 +101,7 @@
   .footer {
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
   }
 
   .logoContainer {
@@ -102,7 +110,7 @@
     align-items: center;
   }
 
-  .socials {
+  .address {
     width: 50%;
   }
 
@@ -112,6 +120,14 @@
 }
 
 @media (max-width: 450px) {
+
+  .address {
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
 
   .socials {
     padding-bottom: 1rem;

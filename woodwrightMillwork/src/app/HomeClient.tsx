@@ -11,9 +11,13 @@ import useIsMobile from "./hooks/useIsMobile";
 import ImageShuffle from "./components/ImageShuffle";
 import HeroOverlay from "./components/HeroOverlay";
 import ContactForm from "./components/ContactForm";
+import { getMapsLink } from "./utils/maps";
+
+const address = "65 Glen Rd. PMB 252, Garner, NC 27529";
 
 export default function HomeClient() {
   const isMobile = useIsMobile(850);
+  const mapsLink = getMapsLink(address);
 
   return (
     <div className={styles.page}>
@@ -44,11 +48,16 @@ export default function HomeClient() {
         <div className={styles.introRight}>
           <h3>Phone</h3>
           <p>
-            <a href="tel:14124917136">412-491-7136</a>
+            <a className={styles.linkHover} href="tel:14124917136">412-491-7136</a>
           </p>
 
           <h3>Location</h3>
-          <p>Garner, NC</p>
+          <a className={styles.linkHover} href={mapsLink} target="_blank" rel="noopener noreferrer">
+              65 Glen Rd. PMB 252
+              <br />
+              Garner, NC 27529
+              <br />
+              </a>
 
           <div className={styles.ctas}>
             <Link className={styles.primary} href="/contact">

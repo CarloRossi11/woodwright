@@ -58,6 +58,17 @@
   align-items: center;
 }
 
+.linkHover {
+  color: inherit;
+  text-align: center;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.linkHover:hover {
+  color: #E2C49C;
+  text-decoration: none;
+}
+
 .weDo {
   display: flex;
   align-items: center;
