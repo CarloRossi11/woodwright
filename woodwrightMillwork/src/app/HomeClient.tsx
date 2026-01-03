@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./page.module.css";
@@ -11,16 +12,32 @@ import useIsMobile from "./hooks/useIsMobile";
 import ImageShuffle from "./components/ImageShuffle";
 import HeroOverlay from "./components/HeroOverlay";
 import ContactForm from "./components/ContactForm";
-import { getMapsLink } from "./utils/maps";
+
+const GOOGLE_MAPS =
+  "https://www.google.com/maps/search/?api=1&query=65+Glen+Rd+PMB+252+Garner+NC+27529";
+
+const APPLE_MAPS =
+  "https://maps.apple.com/?address=65+Glen+Rd.+PMB+252,+Garner,+NC+27529";
 
 const address = "65 Glen Rd. PMB 252, Garner, NC 27529";
 
 export default function HomeClient() {
   const isMobile = useIsMobile(850);
-  const mapsLink = getMapsLink(address);
+  const [mapsLink, setMapsLink] = useState(GOOGLE_MAPS);
+
+
+  useEffect(() => {
+    const isApple =
+      /iPhone|iPad|Macintosh/.test(navigator.userAgent);
+
+    if (isApple) {
+      setMapsLink(APPLE_MAPS);
+    }
+  }, []);
 
   return (
     <div className={styles.page}>
+      <div className={styles.heroViewport}>
       {isMobile ? <HamburgerMenu /> : <Header />}
 
       <Carousel
@@ -46,18 +63,13 @@ export default function HomeClient() {
         </div>
 
         <div className={styles.introRight}>
-          <h3>Phone</h3>
-          <p>
-            <a className={styles.linkHover} href="tel:14124917136">412-491-7136</a>
-          </p>
-
-          <h3>Location</h3>
           <a className={styles.linkHover} href={mapsLink} target="_blank" rel="noopener noreferrer">
               65 Glen Rd. PMB 252
               <br />
               Garner, NC 27529
               <br />
               </a>
+              <a className={styles.linkHover} href="tel:14124917136">412-491-7136</a>
 
           <div className={styles.ctas}>
             <Link className={styles.primary} href="/contact">
@@ -66,6 +78,7 @@ export default function HomeClient() {
           </div>
         </div>
       </section>
+      </div>
 
       <main className={styles.main}>
         <section className={styles.weDo}>
