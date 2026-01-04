@@ -28,15 +28,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* Preload the first hero image */}
-        <link
-          rel="preload"
-          as="image"
-          href="/ripped/kitchen.webp"
-          type="image/webp"
-          fetchPriority="high"
-        />
-
         {/* Optional: preconnect to Google Fonts if needed */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link

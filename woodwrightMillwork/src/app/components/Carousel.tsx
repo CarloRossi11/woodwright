@@ -65,16 +65,8 @@ const Carousel: React.FC<CarouselProps> = ({
             className={`${styles.carouselItem} ${
               index === currentIndex ? styles.active : ""
             }`}
-          >
-            <img
-              src={img}
-              alt={`Hero image ${index + 1}`}
-              className={styles.carouselImage}
-              fetchPriority={index === 0 ? "high" : "low"}
-              loading={index === 0 ? "eager" : "lazy"}
-              decoding="async"
-            />
-          </div>
+            style={{ backgroundImage: `url(${img})` }}
+          />
         ))}
       </div>
       <button
