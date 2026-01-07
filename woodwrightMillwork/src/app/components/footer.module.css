@@ -55,6 +55,11 @@
   align-items: center;
 }
 
+.socialLabel {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
 .logoContainer {
   display: flex;
   justify-content: center;

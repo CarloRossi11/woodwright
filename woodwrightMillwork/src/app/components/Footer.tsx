@@ -14,14 +14,21 @@ export default function Footer() {
           <div className={styles.addressContainer}>
             <address>
               <strong>Woodwright & Millwork LLC</strong>
-              <a className={styles.wrench} href={mapsLink} target="_blank" rel="noopener noreferrer">
+              <a
+                className={styles.wrench}
+                href={mapsLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <br />
-              65 Glen Rd. PMB 252
-              <br />
-              Garner, NC 27529
-              <br />
+                65 Glen Rd. PMB 252
+                <br />
+                Garner, NC 27529
+                <br />
               </a>
-              <a className={styles.wrench} href="tel:+14124917136">(412) 491-7136</a>
+              <a className={styles.wrench} href="tel:+14124917136">
+                (412) 491-7136
+              </a>
             </address>
           </div>
         </div>
@@ -39,12 +46,13 @@ export default function Footer() {
         </div>
         <div className={styles.copyright}>
           <div className={styles.socials}>
-            <h6>Follow Us:</h6>
+            <p className={styles.socialLabel}>Follow Us:</p>
             <div className={styles.socialLinks}>
               <a
                 href="https://www.facebook.com/profile.php?id=100068296598237"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Visit Woodwright on Facebook"
               >
                 <Image
                   className={styles.icon}
@@ -59,6 +67,7 @@ export default function Footer() {
                 href="https://www.instagram.com/woodwrightandmillwork/?hl=en"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Visit Woodwright on Instagram"
               >
                 <Image
                   className={styles.icon}
