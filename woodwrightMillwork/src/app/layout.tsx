@@ -5,13 +5,13 @@ import "./globals.css";
 const cinzel = Cinzel({
   variable: "--font-cinzel",
   subsets: ["latin"],
-  weight: ["700"], // Bold for headers
+  weight: ["700"],
 });
 
 const playfair = Playfair_Display({
   variable: "--font-playfair",
   subsets: ["latin"],
-  weight: ["400", "500", "700"], // Normal + medium + bold for flexibility
+  weight: ["400", "500", "700"],
 });
 
 export const metadata: Metadata = {
@@ -26,17 +26,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <head>
-        {/* Optional: preconnect to Google Fonts if needed */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="anonymous"
-        />
-      </head>
-      <body className={`${cinzel.variable} ${playfair.variable}`}>
+    <html lang="en" className={`${cinzel.variable} ${playfair.variable}`}>
+      <body>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -68,7 +59,6 @@ export default function RootLayout({
             }),
           }}
         />
-
         {children}
       </body>
     </html>

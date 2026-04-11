@@ -37,10 +37,7 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  /* attempt to fill the viewport */
   width: 100%;
-  padding: 1rem;
-  /* optional breathing room */
   box-sizing: border-box;
 }
 
@@ -61,7 +58,7 @@
   /* align content to top */
   justify-content: center;
   /* center horizontally */
-  padding: clamp(1rem, 2vw, 2rem);
+  padding: 5rem 2rem;
   background-color: #274c77;
   width: 100%;
 }
@@ -75,7 +72,16 @@
   align-items: center;
   text-align: center;
   margin: 0.5rem;
+  height: 100%;
 }
+
+/* .contactInfo {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  align-items: center;
+  width: 100%;
+} */
 
 .linkHover {
   color: inherit;
@@ -93,7 +99,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 2rem;
+  padding: 5rem 2rem;
 }
 
 .weDoLeft {
@@ -107,6 +113,13 @@
   width: 50%;
   display: flex;
   flex-direction: column;
+}
+
+.weDoRight ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-top: .25rem;
+  margin-bottom: 1rem;
 }
 
 .main li:not(:last-of-type) {
@@ -164,6 +177,7 @@ a.secondary {
   align-items: center;
   justify-content: center;
   width: 100%;
+  padding: 5rem 2rem;
 }
 
 /* Enable hover only on non-touch devices */

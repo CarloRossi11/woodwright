@@ -25,10 +25,8 @@ export default function HomeClient() {
   const isMobile = useIsMobile(850);
   const [mapsLink, setMapsLink] = useState(GOOGLE_MAPS);
 
-
   useEffect(() => {
-    const isApple =
-      /iPhone|iPad|Macintosh/.test(navigator.userAgent);
+    const isApple = /iPhone|iPad|Macintosh/.test(navigator.userAgent);
 
     if (isApple) {
       setMapsLink(APPLE_MAPS);
@@ -38,46 +36,54 @@ export default function HomeClient() {
   return (
     <div className={styles.page}>
       <div className={styles.heroViewport}>
-      {isMobile ? <HamburgerMenu /> : <Header />}
+        {isMobile ? <HamburgerMenu /> : <Header />}
 
-      <Carousel
-        images={[
-          "/ripped/kitchen.webp",
-          "/ripped/playroom.webp",
-          "/ripped/tv.webp",
-          "/ripped/greenroom.webp",
-        ]}
-        autoPlay
-        autoPlayInterval={4000}
-      />
+        <Carousel
+          images={[
+            "/ripped/kitchen.webp",
+            "/ripped/playroom.webp",
+            "/ripped/tv.webp",
+            "/ripped/greenroom.webp",
+          ]}
+          autoPlay
+          autoPlayInterval={4000}
+        />
 
-      <section className={styles.intro}>
-        <div className={styles.introLeft}>
-          <h1>Woodwright Millwork LLC</h1>
-          <h2>Licensed & Insured · License #87258</h2>
-          <p>
-            Woodwright Millwork LLC specializes in custom carpentry and
-            millwork, delivering beautifully crafted, functional spaces for
-            homes across North Carolina.
-          </p>
-        </div>
-
-        <div className={styles.introRight}>
-          <a className={styles.linkHover} href={mapsLink} target="_blank" rel="noopener noreferrer">
-              65 Glen Rd. PMB 252
-              <br />
-              Garner, NC 27529
-              <br />
+        <section className={styles.intro}>
+          <div className={styles.introLeft}>
+            <h1>Woodwright Millwork LLC</h1>
+            <h2>Licensed & Insured · License #87258</h2>
+            <div className={styles.contactInfo}>
+              <a
+                className={styles.linkHover}
+                href={mapsLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                65 Glen Rd. PMB 252
+                <br />
+                Garner, NC 27529
+                <br />
               </a>
-              <a className={styles.linkHover} href="tel:14124917136">412-491-7136</a>
-
-          <div className={styles.ctas}>
-            <Link className={styles.primary} href="/contact">
-              Contact
-            </Link>
+              <a className={styles.linkHover} href="tel:14124917136">
+                412-491-7136
+              </a>
+            </div>
           </div>
-        </div>
-      </section>
+
+          <div className={styles.introRight}>
+            <p>
+              Woodwright Millwork LLC specializes in custom carpentry and
+              millwork, delivering beautifully crafted, functional spaces for
+              homes across North Carolina.
+            </p>
+            <div className={styles.ctas}>
+              <Link className={styles.primary} href="/contact">
+                Contact
+              </Link>
+            </div>
+          </div>
+        </section>
       </div>
 
       <main className={styles.main}>
