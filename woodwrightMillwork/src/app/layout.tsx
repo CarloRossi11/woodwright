@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Cinzel, Playfair_Display } from "next/font/google";
-import "./globals.css";
+import "./global.css";
 
 const cinzel = Cinzel({
   variable: "--font-cinzel",
