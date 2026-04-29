@@ -50,6 +50,7 @@ export default function HomeClient() {
         <section className={styles.intro}>
           <div className={styles.introLeft}>
             <h1>Woodwright Millwork LLC</h1>
+            <h3>Licensed & Insured · License #87258</h3>
             <p>
               Woodwright &amp; Millwork LLC Exists to build beautifully crafted
               projects that exceed our clients expectations through Quality,
@@ -58,7 +59,6 @@ export default function HomeClient() {
           </div>
 
           <div className={styles.introRight}>
-            <h3>Licensed & Insured · License #87258</h3>
             <div className={styles.contactInfo}>
               <a
                 className={styles.linkHover}

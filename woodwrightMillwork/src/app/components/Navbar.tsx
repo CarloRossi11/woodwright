@@ -56,22 +56,24 @@ export default function Navbar() {
             <h4>About</h4>
           </MotionLink>
         </div>
+      </div>
 
-        {/* Logo — Center */}
-        <div className={styles.logo}>
-          <Link href="/">
-            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-              <Image
-                src="/woddwrightLogo.webp"
-                alt="Woodwright logo"
-                width={75}
-                height={75}
-                priority
-              />
-            </motion.div>
-          </Link>
-        </div>
+      {/* Logo — Center */}
+      <div className={styles.logo}>
+        <Link href="/">
+          <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+            <Image
+              src="/woddwrightLogo.webp"
+              alt="Woodwright logo"
+              width={75}
+              height={75}
+              priority
+            />
+          </motion.div>
+        </Link>
+      </div>
 
+      <div className={styles.desktopLinks}>
         {/* Right Links */}
         <div className={styles.navRight}>
           <MotionLink
@@ -132,15 +134,6 @@ export default function Navbar() {
             <motion.li variants={itemVariants}>
               <Link href="/contact" onClick={() => setIsOpen(false)}>
                 Contact
-              </Link>
-            </motion.li>
-            <motion.li variants={itemVariants}>
-              <Link
-                className={styles.button}
-                target="_blank"
-                href={"https://windowcleaner.com/CaLi_CleanerZ"}
-              >
-                Shop
               </Link>
             </motion.li>
           </motion.ul>
