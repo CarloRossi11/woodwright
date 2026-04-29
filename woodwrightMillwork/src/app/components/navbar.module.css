@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
     padding: .25rem 2rem;
-    background: #CFC6BB;
+    background: #cfc7bb;
     position: relative;
     z-index: 100;
     width: 100%;
@@ -12,19 +12,33 @@
 
 /* Desktop Links */
 .desktopLinks {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navLeft,
+.navRight {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex: 1;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  flex-shrink: 0;
 }
 
 .button {
-  color: #3C6A79;
+  color: #274c77;
   transition: background 0.25s, color 0.25s, border-color 0.25s;
 }
 
 .button:hover {
-  color: #051D22;
+  color: #2660A4;
 }
 
 /* Hamburger hidden on desktop */

@@ -35,68 +35,62 @@ export default function Navbar() {
 
   return (
     <nav className={styles.navbar}>
-
-      {/* Logo */}
-      <div className={styles.logo}>
-        <Link href="/">
-          <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-            <Image
-              src="/officialLogo.png"
-              alt="Cali Cleanerz logo"
-              width={75}
-              height={75}
-              priority
-            />
-          </motion.div>
-        </Link>
-      </div>
-
-      {/* Desktop Left Links */}
+      {/* Desktop Nav */}
       <div className={styles.desktopLinks}>
-        <MotionLink
-          className={styles.button}
-          href="/"
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-        >
-          <h4>Home</h4>
-        </MotionLink>
+        {/* Left Links */}
+        <div className={styles.navLeft}>
+          <MotionLink
+            className={styles.button}
+            href="/"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            <h4>Home</h4>
+          </MotionLink>
+          <MotionLink
+            className={styles.button}
+            href="/about"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            <h4>About</h4>
+          </MotionLink>
+        </div>
 
-        <MotionLink
-          className={styles.button}
-          href="/about"
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-        >
-          <h4>About</h4>
-        </MotionLink>
+        {/* Logo — Center */}
+        <div className={styles.logo}>
+          <Link href="/">
+            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+              <Image
+                src="/woddwrightLogo.webp"
+                alt="Woodwright logo"
+                width={75}
+                height={75}
+                priority
+              />
+            </motion.div>
+          </Link>
+        </div>
 
-      {/* Desktop Right Links */}
-        <MotionLink
-          className={styles.button}
-          href="/portfolio"
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-        >
-          <h4>Portfolio</h4>
-        </MotionLink>
-
-        <MotionLink
-          className={styles.button}
-          href="/contact"
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-        >
-          <h4>Contact</h4>
-        </MotionLink>
-
-        <MotionLink
-          className={styles.button}
-          target="_blank"
-          href={"https://windowcleaner.com/CaLi_CleanerZ"}
-        >
-          <h4>Shop</h4>
-        </MotionLink>
+        {/* Right Links */}
+        <div className={styles.navRight}>
+          <MotionLink
+            className={styles.button}
+            href="/portfolio"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            <h4>Portfolio</h4>
+          </MotionLink>
+          <MotionLink
+            className={styles.button}
+            href="/contact"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            <h4>Contact</h4>
+          </MotionLink>
+        </div>
       </div>
 
       {/* Hamburger Button */}

@@ -235,7 +235,7 @@ a {
   font-family: var(--font-body);
 }
 
-a:hover {
+/* a:hover {
   color: var(--foreground);
   opacity: 0.7;
-}
+} */

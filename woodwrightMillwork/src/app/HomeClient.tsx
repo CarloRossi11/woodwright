@@ -6,12 +6,10 @@ import Link from "next/link";
 import styles from "./page.module.css";
 import Footer from "./components/Footer";
 import Carousel from "./components/Carousel";
-import Header from "./components/Header";
-import HamburgerMenu from "./components/HamburgerMenu";
-import useIsMobile from "./hooks/useIsMobile";
 import ImageShuffle from "./components/ImageShuffle";
 import HeroOverlay from "./components/HeroOverlay";
 import ContactForm from "./components/ContactForm";
+import Navbar from "./components/Navbar";
 
 const GOOGLE_MAPS =
   "https://www.google.com/maps/search/?api=1&query=65+Glen+Rd+PMB+252+Garner+NC+27529";
@@ -22,7 +20,6 @@ const APPLE_MAPS =
 const address = "65 Glen Rd. PMB 252, Garner, NC 27529";
 
 export default function HomeClient() {
-  const isMobile = useIsMobile(850);
   const [mapsLink, setMapsLink] = useState(GOOGLE_MAPS);
 
   useEffect(() => {
@@ -35,9 +32,10 @@ export default function HomeClient() {
 
   return (
     <div className={styles.page}>
+      <div className={styles.navBar}>
+        <Navbar />
+      </div>
       <div className={styles.heroViewport}>
-        {isMobile ? <HamburgerMenu /> : <Header />}
-
         <Carousel
           images={[
             "/ripped/kitchen.webp",
@@ -52,7 +50,15 @@ export default function HomeClient() {
         <section className={styles.intro}>
           <div className={styles.introLeft}>
             <h1>Woodwright Millwork LLC</h1>
-            <h2>Licensed & Insured · License #87258</h2>
+            <p>
+              Woodwright &amp; Millwork LLC Exists to build beautifully crafted
+              projects that exceed our clients expectations through Quality,
+              Integrity, and Customer Service across North Carolina.
+            </p>
+          </div>
+
+          <div className={styles.introRight}>
+            <h3>Licensed & Insured · License #87258</h3>
             <div className={styles.contactInfo}>
               <a
                 className={styles.linkHover}
@@ -69,14 +75,7 @@ export default function HomeClient() {
                 412-491-7136
               </a>
             </div>
-          </div>
 
-          <div className={styles.introRight}>
-            <p>
-              Woodwright Millwork LLC specializes in custom carpentry and
-              millwork, delivering beautifully crafted, functional spaces for
-              homes across North Carolina.
-            </p>
             <div className={styles.ctas}>
               <Link className={styles.primary} href="/contact">
                 Contact
@@ -108,7 +107,7 @@ export default function HomeClient() {
             <ul>
               <li>Custom kitchens and bathrooms</li>
               <li>Built-ins and custom cabinetry</li>
-              <li>Home remodeling and detailed carpentry</li>
+              <li>New builds and home remodeling</li>
               <li>Specialty woodwork and millwork</li>
             </ul>
 
