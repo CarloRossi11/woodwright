@@ -1,12 +1,59 @@
-.heading {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #e8e4e4;
+.services {
+  padding: 5rem 2rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.text {
-  font-size: 1.2rem;
-  color: #666;
+.servicesText {
+  width: 50%;
+  max-width: 700px;
+}
+
+.serviceList {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.company {
+  padding: 5rem 2rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #274c77;
+}
+
+.companyText {
+  width: 50%;
+  max-width: 700px;
+}
+
+.moreButton {
+  font-style: italic;
+}
+
+.moreButton:hover { 
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.founderImage {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonContainer {
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  background-color: #274c77;
 }
 
 .ctas {
@@ -40,71 +87,6 @@ a.primary {
   gap: 8px;
 }
 
-a.secondary {
-  border-color: var(--gray-alpha-200);
-  min-width: 158px;
-}
-
-.company {
-  padding: 2rem;
-  background-color: #274c77;
-}
-
-.founder {
-  padding: 2rem;
-  width: 100%;
-  display: flex;
-  align-items: center;
-}
-
-.founderText {
-  width: 50%;
-}
-
-.founderImage {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.buttonContainer {
-  margin: 1rem;
-  display: flex;
-  justify-content: center;
-}
-
-@media (max-width: 600px) {
-  .main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .company {
-
-    text-align: center;
-  }
-
-  .founder {
-    display: flex;
-    flex-direction: column;
-    /* margin: 1rem; */
-    align-items: center;
-    justify-content: space-around;
-  }
-
-  .founderText {
-    width: 100%;
-    text-align: center;
-  }
-
-  .founderImage {
-    display: none;
-  }
-}
-
 @media (hover: hover) and (pointer: fine) {
   a.primary:hover {
     background-color: #274c77;
@@ -120,5 +102,28 @@ a.secondary {
   .footer a:hover {
     text-decoration: underline;
     text-underline-offset: 4px;
+  }
+}
+
+@media (max-width: 600px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .servicesText,
+  .companyText {
+    width: 100%;
+  }
+
+  .servicesText h1,
+  .companyText h1 {
+    text-align: center;
+  }
+
+  .serviceList,
+  .founderImage {
+    display: none;
   }
 }
