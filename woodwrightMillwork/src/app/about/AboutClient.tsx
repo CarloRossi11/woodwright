@@ -75,20 +75,21 @@ export default function Page() {
                 “Woodwright” was commonly used. The first record of the term
                 Woodwright was recorded in the 1530’s. In the pre- industrial
                 society Woodwright’s were respected and the name “Wright”
-                implied a skilled craftsman.<br/> Before Woodwright &amp; Millwork
-                LLC came to be. We must step back in time to the early 1990’s.
-                As a kid I found joy and fulfillment from disassembling things,
-                connecting things, fixing things. Often not being able to repair
-                or reassemble most of them but ultimately getting personal
-                fulfillment from seeing people’s reactions and the feeling of
-                accomplishment when I built something. Discovering my joy and
-                interest in building at a young age was further fueled by the
-                projects I did, as a kid, to build my first bird house and help
-                build a picnic table, as well as watching my grandfather carve
-                wooden ducks. No one knew what kind of impact this would have on
-                my future. <br/> After graduating high school and completing two years
-                of college I discovered that I was headed in the wrong direction
-                with my career. <br/> In 2011 I decided to shift gears and pursue my
+                implied a skilled craftsman.
+                <br /> Before Woodwright &amp; Millwork LLC came to be. We must
+                step back in time to the early 1990’s. As a kid I found joy and
+                fulfillment from disassembling things, connecting things, fixing
+                things. Often not being able to repair or reassemble most of
+                them but ultimately getting personal fulfillment from seeing
+                people’s reactions and the feeling of accomplishment when I
+                built something. Discovering my joy and interest in building at
+                a young age was further fueled by the projects I did, as a kid,
+                to build my first bird house and help build a picnic table, as
+                well as watching my grandfather carve wooden ducks. No one knew
+                what kind of impact this would have on my future. <br /> After
+                graduating high school and completing two years of college I
+                discovered that I was headed in the wrong direction with my
+                career. <br /> In 2011 I decided to shift gears and pursue my
                 love for building in the residential remodeling industry by
                 becoming a full-time carpenter in western Pennsylvania. Ten
                 years later, after working, working my way up from a laborer to
@@ -96,11 +97,11 @@ export default function Page() {
                 licensed/insured General Contractor. Woodwright &amp; Millwork
                 LLC was formed with the singular goal of building beautifully
                 crafted projects with a focus on three things: Quality,
-                Integrity, and Customer Service. <br/> My Name is Andrew Schafer. I am
-                the owner/operator of Woodwright &amp; Millwork LLC. Thank you
-                for taking a look at our website. We look forward to the
-                opportunity to create a home project that will bring joy and
-                value to you and your family for years to come.
+                Integrity, and Customer Service. <br /> My Name is Andrew
+                Schafer. I am the owner/operator of Woodwright &amp; Millwork
+                LLC. Thank you for taking a look at our website. We look forward
+                to the opportunity to create a home project that will bring joy
+                and value to you and your family for years to come.
               </p>
             )}
 

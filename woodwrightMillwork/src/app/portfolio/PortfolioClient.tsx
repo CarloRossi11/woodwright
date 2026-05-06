@@ -1,18 +1,15 @@
 "use client";
 
 import styles from "./portfolio.module.css";
-import Header from "../components/Header";
 import Footer from "../components/Footer";
-import HamburgerMenu from "../components/HamburgerMenu";
-import useIsMobile from "../hooks/useIsMobile";
 import ImageViewer from "../components/ImageViewer";
 import HeroOverlay from "../components/HeroOverlay";
+import Navbar from "../components/Navbar";
 
 export default function Page() {
-  const isMobile = useIsMobile(850);
   return (
     <div className={styles.wrapper}>
-      {isMobile ? <HamburgerMenu /> : <Header />}
+      <Navbar />
       <HeroOverlay
         backgroundSrc="/ripped/kitchen.webp"
         height="500px"

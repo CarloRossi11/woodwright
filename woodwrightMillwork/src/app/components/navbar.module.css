@@ -32,12 +32,12 @@
 }
 
 .button {
-  color: #274c77;
+  color: #000;
   transition: background 0.25s, color 0.25s, border-color 0.25s;
 }
 
 .button:hover {
-  color: #2660A4;
+  color: #274c77;
 }
 
 /* Hamburger hidden on desktop */
