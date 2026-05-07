@@ -125,7 +125,7 @@ export default function Page() {
       </div>
       <div className={styles.buttonContainer}>
         <div className={styles.ctas}>
-          <a className={styles.primary} href={"/pages/contact"}>
+          <a className={styles.primary} href={"/contact"}>
             Contact
           </a>
         </div>

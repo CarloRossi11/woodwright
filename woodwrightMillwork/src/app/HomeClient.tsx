@@ -131,11 +131,12 @@ export default function HomeClient() {
             className={styles.logo}
             src="/woddwrightLogo.webp"
             alt="Woodwright Millwork logo"
-            width={75}
-            height={75}
+            width={100}
+            height={100}
             priority
           />
-          <p>Custom Carpentry · Built-Ins · Kitchens & Bathrooms</p>
+          {/* <p>Custom Carpentry · Built-Ins · Kitchens & Bathrooms</p> */}
+          <h5>"We do Woodwright"</h5>
         </HeroOverlay>
 
         <section className={styles.contact}>
