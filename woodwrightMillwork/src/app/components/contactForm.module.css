@@ -87,13 +87,22 @@
 ---------------------------- */
 
 .contactForm button {
-  padding: 0.7rem 1.5rem;
+  padding: 0 20px;
   background-color: #cfc7bb;
   color: #274c77;
   border: 1px solid #274c77;
-  border-radius: 4px;
+  border-radius: 128px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+  font: inherit; 
+  height: 48px;
   cursor: pointer;
-  transition: background 0.25s, color 0.25s, border-color 0.25s;
+  text-decoration: none;
+  transition:
+    background 0.2s,
+    color 0.2s,
+    border-color 0.2s;
 }
 
 .contactForm button:hover {
@@ -106,6 +115,12 @@
   display: flex;
   justify-content: center;
   margin-top: 1rem;
+}
+
+.successMessage {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
 }
 
 /* ---------------------------

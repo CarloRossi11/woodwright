@@ -6,8 +6,11 @@ import Footer from "../components/Footer";
 import HeroOverlay from "../components/HeroOverlay";
 import Navbar from "../components/Navbar";
 import Image from "next/image";
+import Link from "next/link";
+import { motion } from "motion/react";
 
 export default function Page() {
+  const MotionLink = motion.create(Link);
   const [expanded, setExpanded] = useState(false);
   return (
     <div className={styles.wrapper}>
@@ -125,9 +128,19 @@ export default function Page() {
       </div>
       <div className={styles.buttonContainer}>
         <div className={styles.ctas}>
-          <a className={styles.primary} href={"/contact"}>
+          <MotionLink
+            className={styles.primary}
+            href="/contact"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            transition={{
+              type: "spring",
+              stiffness: 300,
+              damping: 20,
+            }}
+          >
             Contact
-          </a>
+          </MotionLink>
         </div>
       </div>
       <Footer />

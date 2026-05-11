@@ -10,6 +10,10 @@ import ImageShuffle from "./components/ImageShuffle";
 import HeroOverlay from "./components/HeroOverlay";
 import ContactForm from "./components/ContactForm";
 import Navbar from "./components/Navbar";
+import { motion } from "motion/react";
+
+//TODO:
+
 
 const GOOGLE_MAPS =
   "https://www.google.com/maps/search/?api=1&query=65+Glen+Rd+PMB+252+Garner+NC+27529";
@@ -20,6 +24,7 @@ const APPLE_MAPS =
 const address = "65 Glen Rd. PMB 252, Garner, NC 27529";
 
 export default function HomeClient() {
+  const MotionLink = motion.create(Link);
   const [mapsLink, setMapsLink] = useState(GOOGLE_MAPS);
 
   useEffect(() => {
@@ -77,9 +82,19 @@ export default function HomeClient() {
             </div>
 
             <div className={styles.ctas}>
-              <Link className={styles.primary} href="/contact">
+              <MotionLink
+                className={styles.primary}
+                href="/contact"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                transition={{
+                  type: "spring",
+                  stiffness: 300,
+                  damping: 20,
+                }}
+              >
                 Contact
-              </Link>
+              </MotionLink>
             </div>
           </div>
         </section>
@@ -112,9 +127,19 @@ export default function HomeClient() {
             </ul>
 
             <div className={styles.ctas}>
-              <Link className={styles.primary} href="/about">
+              <MotionLink
+                className={styles.primary}
+                href="/about"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                transition={{
+                  type: "spring",
+                  stiffness: 300,
+                  damping: 20,
+                }}
+              >
                 View Services
-              </Link>
+              </MotionLink>
             </div>
           </div>
         </section>
